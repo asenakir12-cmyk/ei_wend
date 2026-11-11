@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу — Евгений и Ирина</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Библиотека AOS для анимаций -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <!-- Шрифты: добавил Comfortaa для мягкости -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Noto+Serif:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+     <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Cormorant+Infant:ital,wght@0,300;0,400;0,600;1,300&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+
+       <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Infant:ital,wght@0,300;0,400;0,600;1,300&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+ <!-- Иконки Lucide -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        :root {
+            --cool-berry-red: #722F37;
+            --cool-taupe-brown: #5D4A44;
+            --cool-emerald-green: #1A472A;
+            --cool-pine-green: #2B3D2E;
+            --color-espresso: #2E1A0E;
+            --color-burgundy: #461312;
+            --silver: #c0c0c0;
+            --gold: #c78f20;
+            --color-olive: #64652A;
+            --color-sage: #B5AD80;
+            --berry-gradient: linear-gradient(135deg, #722F37 0%, #a44a53 50%, #722F37 100%);
+            --glass-wine-gradient: linear-gradient(135deg, rgba(164, 74, 83, 0.8) 0%, rgba(114, 47, 55, 0.9) 100%);
+            --color-cranberry: #b7464e;
+            --color-dark-green: #052102;
+            --red: #900020;
+            --black: #000000;
+        }
+
+     /* Глобальные настройки шрифта */
+        body {
+            font-family: 'Cormorant Infant', serif;
+            background-color: #ffffff;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* СТИЛЬ ИМЕН: Тот самый эффект */
+        .infant-font-main {
+            font-family: 'Cormorant Infant', serif !important;
+            font-weight: 300 !important; /* Легкое начертание делает шрифт изящным */
+            font-style: normal;
+            text-transform: none;
+            /* Настройки для исключения отображения "обычного" шрифта */
+            display: inline-block;
+        }
+
+        
+
+
+        .serif-title { font-family: 'Playfair Display', serif; }
+
+        /* Стиль Alex Brush для инициалов K & A */
+        .alex-brush {
+            font-family: 'Alex Brush', cursive !important;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+       .initials-font_y { 
+            font-family: 'Italianno', cursive;  
+            color: #ffffff;
+            text-shadow: none;
+        }
+
+
+/* Карточка с эффектом стекла */
+.premium-form-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.03);
+            border-radius: 40px;
+            /* Явные отступы для всех экранов */
+            padding: 1.5rem 2rem 3rem 2rem; 
+            margin: 0 auto;
+            width: 100%;
+        }
+   .info-highlight-box {
+            background-color: rgba(114, 47, 55, 0.03);
+            border-left: 3px solid var(--cool-berry-red);
+            padding: 1.25rem;
+            border-radius: 0 15px 15px 0;
+            font-family: 'Comfortaa', sans-serif;
+        }      
+
+/* Кнопка с эффектом стекла */
+ .glass-btn {
+            background: var(--glass-wine-gradient);
+            color: white;
+            padding: 1.2rem;
+            border-radius: 100px;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            width: 100%;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 20px rgba(114, 47, 55, 0.15);
+        }
+
+        .glass-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(114, 47, 55, 0.25);
+        }
+
+/* Стиль вариантов ответа (шрифт Comfortaa) */
+.option-card {
+            font-family: 'Comfortaa', sans-serif;
+            background: white;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            padding: 1rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            font-size: 0.85rem;
+        }
+
+        input[type="radio"] { display: none; }
+        
+        input[type="radio"]:checked + .option-card {
+            background: #fffafa;
+            border-color: var(--cool-berry-red);
+            color: var(--cool-berry-red);
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(114, 47, 55, 0.1);
+        }
+
+        /* ============ ГЛАВНЫЙ ЭКРАН ============ */
+        /* Фото пары (photo7.jpg) небольшое, поэтому оно показано целиком и чётко,
+           а фон вокруг — его же размытая копия. Плашка стоит там, где пары нет. */
+        .hero-section {
+            --glass-tint: 30, 12, 14;   /* оттенок стекла (RGB), сейчас тёмно-винный */
+            position: relative;
+            min-height: 100vh;
+            min-height: 100svh;
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding: 0 16px 24px;
+            background: #1f2a1f;
+            overflow: hidden;
+            isolation: isolate;
+        }
+
+        /* Размытый фон из того же фото */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            inset: -40px;
+            /* берём только зелёный верхний левый угол фото — без лиц */
+            background: url('photo7.jpg') 0 0 / max(260vw, 340svh) auto no-repeat;
+            filter: blur(22px) saturate(1.15);
+            z-index: 0;
+        }
+
+        /* Лёгкое затемнение размытого фона */
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(20, 8, 10, 0.28);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Чёткое фото пары: сверху, целиком, низ плавно растворяется */
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            aspect-ratio: 676 / 728;          /* пропорции photo7.jpg */
+            height: min(62vh, 107.7vw);       /* на телефоне фото во всю ширину */
+            height: min(62svh, 107.7vw);
+            background: url('photo7.jpg') center / cover no-repeat;
+            -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+            mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Планшет: боковые края фото тоже растворяем */
+        @media (min-width: 600px) {
+            .hero-section::after {
+                -webkit-mask-image:
+                    linear-gradient(to bottom, #000 72%, transparent 100%),
+                    linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+                mask-image:
+                    linear-gradient(to bottom, #000 72%, transparent 100%),
+                    linear-gradient(to right, transparent 0%, #000 12%, #000 88%, transparent 100%);
+                -webkit-mask-composite: source-in;
+                mask-composite: intersect;
+            }
+        }
+
+        /* Плашка из жидкого стекла */
+        .hero-glass {
+            position: relative;
+            z-index: 2;
+            width: 100%;
+            max-width: 480px;
+            padding: 1.3rem 1.4rem 1.3rem;
+            text-align: center;
+            color: #fff;
+            border-radius: 32px;
+            background:
+                linear-gradient(135deg, rgba(255,255,255,0.28) 0%, rgba(255,255,255,0.06) 45%, rgba(255,255,255,0.14) 100%),
+                rgba(var(--glass-tint), 0.30);
+            -webkit-backdrop-filter: blur(18px) saturate(170%);
+            backdrop-filter: blur(18px) saturate(170%);
+            border: 1px solid rgba(255, 255, 255, 0.38);
+            box-shadow:
+                inset 0 1px 1px rgba(255, 255, 255, 0.6),
+                inset 0 -1px 1px rgba(255, 255, 255, 0.15),
+                0 20px 50px rgba(0, 0, 0, 0.28);
+            text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Глянцевый блик */
+        .hero-glass::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+            background: linear-gradient(115deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0) 28%);
+            pointer-events: none;
+        }
+
+        .hero-glass > * { position: relative; }
+
+        .hero-kicker {
+            font-family: 'Cormorant Infant', serif;
+            font-style: italic;
+            font-weight: 300;
+            font-size: 1.2rem;
+            letter-spacing: 0.08em;
+        }
+
+        .hero-names {
+            font-family: 'Cormorant Infant', serif;
+            font-weight: 300;
+            font-size: clamp(2.4rem, 10vw, 3.6rem);
+            line-height: 1.05;
+            margin: 0.3rem 0 0;
+            letter-spacing: 0.01em;
+        }
+
+        /* Голуби (photo13): белые линии на прозрачном фоне, встроены прямо в файл */
+        .hero-ornament {
+            display: block;
+            width: 150px;
+            height: auto;
+            margin: 0.3rem auto 0.2rem;
+            opacity: 0.92;
+        }
+
+        .hero-date {
+            font-family: 'Cormorant Infant', serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            letter-spacing: 0.18em;
+            padding-top: 0.6rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.35);
+            display: inline-block;
+            min-width: 70%;
+        }
+
+        /* Широкий экран: фото справа во всю высоту, плашка слева, пара ничем не закрыта */
+        @media (min-width: 1000px) and (min-aspect-ratio: 3/2) {
+            .hero-section { align-items: center; justify-content: flex-start; padding: 0 5vw; }
+            .hero-section::after {
+                top: 0; bottom: 0; left: auto; right: 0;
+                transform: none;
+                aspect-ratio: auto;
+                height: auto;
+                width: calc(100vh * 0.9286);
+                width: calc(100svh * 0.9286);     /* пропорции photo7.jpg: 676 × 728 */
+                -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 14%);
+                mask-image: linear-gradient(to right, transparent 0%, #000 14%);
+                -webkit-mask-composite: source-over;
+                mask-composite: add;
+            }
+            .hero-glass { width: min(30vw, 460px); max-width: none; padding: 2.2rem 2rem; }
+            .hero-ornament { width: 170px; }
+        }
+
+        /* Если браузер не умеет размытие — делаем плашку плотнее */
+        @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+            .hero-glass { background: rgba(60, 25, 30, 0.65); }
+        }
+
+        h2, .cursive { font-family: 'Great Vibes', cursive; }
+        .serif { font-family: 'Noto Serif', serif; }
+
+        .rounded-text {
+            font-family: 'Comfortaa', sans-serif; /* Подключаем округлый шрифт */
+            font-weight: 400;                     /* Делаем его средней толщины */
+            letter-spacing: -0.02em;              /* Чуть сближаем буквы для мягкости */
+        }
+
+         /* Тонкая и изящная заглавная А */
+        .alt-capital {
+            font-family: 'Petit Formal Script', cursive;
+            font-size: 0.85em;
+            display: inline-block;
+            margin-right: -0.05em;
+            font-weight: 300;
+            vertical-align: baseline;
+        }
+
+        .serif-title { font-family: 'Playfair Display', serif; }
+        .garamond { font-family: 'Cormorant Garamond', serif; }
+
+        .text-accent-red { color: var(--cool-berry-red); }
+        .text-accent-green { color: var(--cool-emerald-green); }
+
+        /* КАЛЕНДАРЬ скруглен */
+        .calendar-container {
+            max-width: 480px; 
+            width: 100%;
+            aspect-ratio: 1 / 1; 
+            margin: 0 auto;
+            padding: 40px 30px;
+            background: rgba(255, 255, 255, 0.7); 
+            backdrop-filter: blur(10px); 
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 40px; /* Скругление календаря */
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px; 
+            text-align: center;
+        }
+
+        .calendar-day-name {
+            font-weight: 800;
+            font-size: 0.9rem; 
+            color: var(--cool-berry-red);
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .calendar-day {
+            padding: 12px 0; 
+            font-size: 1.1rem; 
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            color: #666;
+        }
+
+        .wedding-day { 
+            color: white !important; 
+            z-index: 1;
+            font-weight: 800;
+        }
+
+        .heart-marker-svg {
+            position: absolute;
+            width: 55px; 
+            height: 55px;
+            fill: var(--red);
+            z-index: -1;
+            animation: heartBeat 1.5s infinite ease-in-out;
+        }
+
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+
+        /* PHOTO 2 скруглена */ 
+        .secondary-photo-container {
+            max-width: 800px; 
+            margin: 3rem auto 0;
+            padding: 0 20px;
+        }
+
+        .secondary-photo {
+            width: 100%;
+            height: auto; 
+            object-fit: contain; 
+            display: block;
+            border-radius: 30px; /* Скругление главного фото */
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+         /* ТАЙМЛАЙН ПРОГРАММЫ */
+        .timeline-center {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .timeline-center::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: linear-gradient(180deg, transparent 0%, var(--cool-berry-red) 15%, var(--cool-berry-red) 85%, transparent 100%);
+            opacity: 0.2;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+
+        .timeline-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 5rem;
+            position: relative;
+        }
+
+        .timeline-content {
+            width: 45%;
+            position: relative;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 12px;
+            height: 12px;
+            background: white;
+            border: 2px solid var(--cool-berry-red);
+            border-radius: 50%;
+            z-index: 2;
+        }
+
+        .timeline-row-left { justify-content: flex-start; text-align: right; }
+        .timeline-row-right { justify-content: flex-end; text-align: left; }
+
+        /* СЕКЦИЯ ЛОКАЦИИ БЕЗ КАРТОЧКИ */
+        .location-section {
+            max-width: 800px;
+            margin: 4rem auto;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .map-btn-link {
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1.5rem;
+            padding: 14px 40px;
+            border: 1px solid var(--cool-berry-red);
+            color: var(--cool-berry-red);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            transition: all 0.3s ease;
+            background: transparent;
+            min-width: 220px; 
+            justify-content: center;
+            border-radius: 50px; /* Скругленные кнопки */
+        }
+
+        .map-btn-link:hover {
+            background: var(--cool-berry-red);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        /* Контейнер карты скруглен */
+        .map-iframe-wrapper {
+            margin: 2.5rem auto 0;
+            width: 100%; 
+            max-width: 500px;
+            height: 300px; 
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            border: 1px solid #f0f0f0;
+            border-radius: 30px; /* Скругление карты */
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 2px dashed rgba(26, 71, 42, 0.2);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 8px;
+            width: 14px;
+            height: 14px;
+            background: var(--cool-berry-red);
+            border-radius: 50%; /* Скругленные маркеры таймлайна */
+        }
+
+        .btn-submit {
+            background-color: var(--cool-berry-red);
+            transition: all 0.3s ease;
+            border-radius: 50px;
+        }
+
+        .btn-submit:hover {
+            background-color: var(--cool-berry-red);
+            transform: translateY(-2px);
+        }
+        .dresscode-palette {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 12px;
+            height: 400px;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .color-pillar {
+            flex: 1;
+            height: 100%;
+            border-radius: 60px 60px 15px 15px;
+            transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            min-width: 0; /* Позволяет сжиматься максимально */
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
+            -webkit-tap-highlight-color: transparent; /* Убирает синюю рамку на iOS */
+            user-select: none;
+            -webkit-user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            touch-action: manipulation;
+        }
+
+       
+        /* 1. Линия должна всегда быть по центру */
+        .timeline-center::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: var(--cool-emerald-green);
+            opacity: 0.2;
+            top: 0;
+            bottom: 0;
+            left: 50%; /* Всегда 50% */
+            margin-left: -1px;
+        }
+        
+        /* 2. Точки (кружочки) всегда по центру */
+        .timeline-dot {
+            position: absolute;
+            left: 50%; /* Всегда по центру линии */
+            transform: translateX(-50%);
+            width: 12px;
+            height: 12px;
+            background: white;
+            border: 2px solid var(--cool-emerald-green);
+            border-radius: 50%;
+            z-index: 2;
+        }
+        
+        /* 3. Ширина контента (блоков с текстом) */
+        .timeline-content {
+            width: 45%; /* Текст занимает чуть меньше половины ширины */
+            position: relative;
+        }
+        /* Состояние при наведении (десктоп) и клике (мобильные) */
+        .color-pillar:hover, 
+        .color-pillar:active,
+        .color-pillar.active {
+            flex: 3.5;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+        }
+        
+        .color-name-inner {
+            color: white;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            opacity: 0; /* Название скрыто по умолчанию */
+            transition: opacity 0.3s ease 0.2s;
+        }
+        
+        .color-pillar:hover .color-name-inner, 
+        .color-pillar:active .color-name-inner,
+        .color-pillar.active .color-name-inner {
+            opacity: 1;
+        }
+        
+        /* Контейнер для фото дресс-кода */
+            .dress-code-photos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Центрирование по горизонтали */
+                align-items: center;    /* Центрирование по вертикали */
+                gap: 20px;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .dress-code-photos img {
+                width: 100%;
+                max-width: 650px;
+                height: auto;
+                border-radius: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            }
+        /* Эффект жидкого стекла для карточек */
+        .modern-info-card {
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(12px) saturate(180%);
+            -webkit-backdrop-filter: blur(12px) saturate(180%);
+            border-radius: 12px;
+            padding: 45px 35px;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+            height: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0 8px 32px 0 rgba(114, 47, 55, 0.05);
+        }
+        
+        .modern-info-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--cool-berry-red); /* Золотой при наведении */
+            background: rgba(255, 255, 255, 0.85);
+            box-shadow: 0 30px 60px -12px rgba(114, 47, 55, 0.15);
+        }
+        
+       /* Стили для иконок и текста внутри карточек */
+        .icon-box-premium {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 25px;
+            color: #461312; /* Винный цвет */
+            transition: all 0.5s ease;
+        }
+        
+        .modern-info-card:hover .icon-box-premium {
+            color: var(--cool-berry-red);
+            transform: scale(1.1);
+        }
+        
+        .premium-divider {
+            width: 40px;
+            height: 1px;
+            background: var(--cool-berry-red);
+            margin: 20px auto;
+            opacity: 0.3;
+            transition: width 0.5s ease;
+        }
+        
+        .modern-info-card:hover .premium-divider {
+            width: 80px;
+            opacity: 1;
+        }
+        
+       
+
+         @media (max-width: 640px) {
+            .mobile-title-break {
+                display: block;
+                line-height: 1.1;
+                margin-bottom: 0.25rem;
+            }
+            .calendar-container {
+                border-radius: 30px;
+                padding: 25px 15px;
+            }
+             
+             /* Палитра - добавляем боковые отступы */
+            .dresscode-palette {
+                height: 320px;
+                gap: 8px;
+                padding: 0 20px; 
+                min-width: 0; /* Позволяет сжиматься максимально */
+            }
+             /* Контейнер для фото дресс-кода */
+            .dress-code-photos {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center; /* Центрирование по горизонтали */
+                align-items: center;    /* Центрирование по вертикали */
+                gap: 20px;
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .dress-code-photos img {
+                width: 100%;
+                max-width: 350px;
+                height: auto;
+                border-radius: 20px;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            }
+              /* Дополнительный отступ для нижнего блока в хедере на мобильных */
+            
+            .timeline-center::after { left: 20px; }
+            .timeline-dot { left: 20px; transform: none; margin-left: -6px; }
+            .timeline-row { justify-content: flex-start !important; text-align: left !important; margin-bottom: 4rem; }
+            .timeline-content { width: 85%; margin-left: 50px; }
+             /* Новые отступы для блока дресс-кода на мобильных */
+            .dresscode-palette { 
+                height: 320px; 
+                gap: 8px; 
+                padding-left: 20px !important; 
+                padding-right: 20px !important; 
+            }
+            .dresscode-text-container p {
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+             /* .premium-form-card { 
+                padding: 3rem 1.5rem; /* Уменьшаем на мобильных, но оставляем зазор */
+            } */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Шапка -->
+    <header class="hero-section" data-aos="fade-in">
+        <div class="hero-overlay"></div>
+        <div class="hero-glass" data-aos="fade-up" data-aos-duration="1200">
+            <p class="hero-kicker">Приглашение на свадьбу</p>
+            <h1 class="hero-names">Евгений и Ирина</h1>
+            <img src="data:image/png;base64,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" alt="" class="hero-ornament" width="296" height="152">
+            <p class="hero-date">27 декабря 2026</p>
+        </div>
+    </header>
+
+    <!-- Основной блок -->
+    <section class="pt-16 bg-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="infant-font-main text-5xl md:text-6xl text-accent-red mb-16" data-aos="fade-up">
+                <span class="mobile-title-break">Дорогие</span> родные и близкие!
+            </h2>
+            
+            <!-- Календарь -->
+            <div class="calendar-container mb-12" data-aos="zoom-in">
+                <div class="rounded-text text-xl mb-6 text-accent-red font-bold tracking-widest">ДЕКАБРЬ 2026</div>
+                <div class="calendar-grid">
+                    <div class="calendar-day-name">Пн</div><div class="calendar-day-name">Вт</div><div class="calendar-day-name">Ср</div><div class="calendar-day-name">Чт</div><div class="calendar-day-name">Пт</div><div class="calendar-day-name">Сб</div><div class="calendar-day-name">Вс</div>
+                    <div class="calendar-day"></div><div class="calendar-day">1</div><div class="calendar-day">2</div><div class="calendar-day">3</div><div class="calendar-day">4</div><div class="calendar-day">5</div><div class="calendar-day">6</div>
+                    <div class="calendar-day">7</div><div class="calendar-day">8</div>
+                    <div class="calendar-day">9</div>
+                    <div class="calendar-day">10</div><div class="calendar-day">11</div><div class="calendar-day">12</div><div class="calendar-day">13</div>
+                    <div class="calendar-day">14</div><div class="calendar-day">15</div><div class="calendar-day">16</div>
+                    <div class="calendar-day"> 17 </div>
+                    <div class="calendar-day">18</div><div class="calendar-day">19</div><div class="calendar-day">20</div>
+                    <div class="calendar-day">21</div><div class="calendar-day">22</div><div class="calendar-day">23</div><div class="calendar-day">24</div><div class="calendar-day">25</div><div class="calendar-day">26</div>
+                    <div class="calendar-day wedding-day">27
+                    <svg class="heart-marker-svg" viewBox="0 0 32 32">
+                            <path d="M16 28.5s-12-7.2-12-14.5c0-4 3.1-7.2 7-7.2 2.3 0 4.4 1.1 5 3.2.6-2.1 2.7-3.2 5-3.2 3.9 0 7 3.2 7 7.2 0 7.3-12 14.5-12 14.5z"/>
+                        </svg>
+                    </div>
+                    <div class="calendar-day">28</div><div class="calendar-day">29</div><div class="calendar-day">30</div>
+                </div>
+            </div>
+
+            <div class="max-w-2xl mx-auto" data-aos="fade-up">
+                <p class="rounded-text text-xl md:text-2xl leading-relaxed mb-12">
+                    Мы очень хотим разделить <br> с Вами самый важный день в нашей жизни — <br> день нашей свадьбы!
+                </p>
+                
+                <div class="secondary-photo-container">
+                    <img src="photo2.jpg" alt="[Фото пары]" class="secondary-photo" onerror="this.style.display='none';">
+                </div>
+
+                <!-- Блок локации без карточки -->
+                <div class="location-section" data-aos="fade-up">
+                    <span class="text-xs tracking-[0.3em] uppercase text-gray-400 mb-4 block">Место встречи</span>
+                    <div class="mt-12 mb-8">
+                        <img src="photo8.jpg" alt="[Фото шатра]" class="mx-auto w-full max-w-[600px] h-auto shadow-2xl rounded-[30px]" onerror="this.style.display='none';">
+                    </div>
+
+                    <h3 class="rounded-text text-l text-accent-red mb-2">Загородный комплекс «Усадьба Видная»</h3>
+                    <h3 class="rounded-text text-l text-accent-red mb-2">большой банкетный зал</h3>
+                    
+                    <div class="mb-6 text-gray-600">
+                        <p class="flex items-center justify-center">
+                            <svg class="w-5 h-5 mr-2 text-accent-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path></svg>
+                            г. Видное, ул. Старо-Нагорная ул., 20Б, 2 этаж
+                        </p>
+                    </div>
+                    
+                    
+                    
+                    <div>
+                        <a href="https://yandex.ru/maps/-/CXv-4KpK" target="_blank" class="map-btn-link">
+                            Открыть навигатор
+                        </a>
+                    </div>
+
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Обновленная Программа дня -->
+
+
+    
+<section class="bg-white overflow-hidden text-center">
+    <div class="container mx-auto px-4">
+        <h2 class=" infant-font-main text-5xl  mb-20" data-aos="fade-down">Программа дня</h2>
+        
+        <div class="timeline-center">
+            <!-- 15:00 - Слева -->
+            <div class="timeline-row timeline-row-left" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="text-accent-red font-bold text-4xl mb-1 uppercase tracking-widest">15:00</div>
+                    <h3 class="serif text-2xl text-accent-red">Сбор гостей</h3>
+                </div>
+            </div>
+
+            <!-- 16:00 - Справа -->
+            <div class="timeline-row timeline-row-right" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="text-accent-red font-bold text-4xl mb-1 uppercase tracking-widest">16:00</div>
+                    <h3 class="serif text-2xl text-accent-red">Церемония</h3>
+                </div>
+            </div>
+
+            <!-- 17:00 - Слева -->
+            <div class="timeline-row timeline-row-left" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="text-accent-red font-bold text-4xl mb-1 uppercase tracking-widest">17:00</div>
+                    <h3 class="serif text-2xl text-accent-red">Свадебный ужин</h3>
+                </div>
+            </div>
+
+            <!-- 23:00 - Справа -->
+            <div class="timeline-row timeline-row-right" data-aos="fade-left">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="text-accent-red font-bold text-4xl mb-1 uppercase tracking-widest">23:00</div>
+                    <h3 class="serif text-2xl text-accent-red">Завершение мероприятия</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <section class="pt-0 py-8 bg-white overflow-hidden">
+    <div class="secondary-photo-container">
+                    <img src="photo4.jpg" alt="[Фото пары]" class="secondary-photo" onerror="this.style.display='none';">
+                </div>
+</section>
+<section class="py-10 bg-white text-center">
+    <h2 class="infant-font-main text-5xl text-accent-red mb-8">Дресс-код</h2>
+    <p class="rounded-text text-xl md:text-2xl leading-relaxed mb-12">
+    Мы очень стараемся <br> сделать свадьбу красивой и стильной, <br> поэтому просим вас <br> в своих нарядах поддержать <br> цветовую палитру нашей свадьбы
+</p>
+    
+    <div class="dresscode-palette">
+         <div class="color-pillar" style="background-color: var(--black);">
+            <span class="color-name-inner">Black</span>
+        </div>
+        <div class="color-pillar" style="background-color: var(--red);">
+            <span class="color-name-inner">Red</span>
+        </div>
+        <div class="color-pillar" style="background-color: var(--color-burgundy);">
+            <span class="color-name-inner">Burgundy</span>
+        </div>
+         <div class="color-pillar" style="background-color: var(--gold);">
+            <span class="color-name-inner">Gold</span>
+        </div>
+         <div class="color-pillar" style="background-color: var(--silver);">
+            <span class="color-name-inner">Silver</span>
+        </div>
+    </div>
+    <!-- Контейнер для фото -->
+            <div class="dress-code-photos mt-12 justify-center" id="dressCodePhotos">
+                <img src="photo3.jpg" alt="[Стиль одежды 1]" data-aos="fade-up" onerror="handleImageError(this)">
+            </div>
+        </div>
+    <div class="dress-code-photos justify-center" id="dressCodePhotos">
+                <img src="photo5.jpg" alt="[Стиль одежды 2]" data-aos="fade-up" onerror="handleImageError(this)">
+            </div>
+        </div>
+</section>
+
+
+    <section class="pt-4 py-0 text-center" style="background: #ffffff;">
+    <div class="container mx-auto px-4">
+        <div class="py-0 text-center mb-10" data-aos="fade-up">
+            <h2 class="infant-font-main text-5xl text-accent-red mb-5">Памятка гостям</h2>
+        </div>
+        
+        <div class="pt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 max-w-7xl mx-auto">
+            <!-- Карточка 1 -->
+            <div class="modern-info-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box-premium">
+                    <div class="photo-container">
+                            <img src="photo10.jpg">
+                        </div>
+                    </svg>
+                </div>
+                <h3 class="rounded-text text-xl mb-2">Подарки</h3>
+                <div class="premium-divider"></div>
+                <p class="rounded-text text-sm text-gray-500 font-light leading-relaxed">Мы будем рады любому вкладу в бюджет нашей семьи.</p>
+
+                
+            </div>
+            <!-- Карточка 2 -->
+            <div class="modern-info-card" data-aos="fade-up">
+                <div class="icon-box-premium">
+                   <div class="photo-container">
+                            <img src="photo11.jpg">
+                        </div>
+                    </svg>
+                </div>
+                <h3 class="rounded-text text-xl mb-2">Цветы</h3>
+                <div class="premium-divider"></div>
+                <p class="rounded-text text-sm text-gray-500 font-light leading-relaxed">Ваше присутствие на свадьбе - для нас самый лучший подарок в этот день! Замените пожалуйста цветы на хорошее настроение и на историю нашего с Вами знакомства, чтобы было всем весело и все узнали друг-друга (и нас) получше.</p>
+            </div>
+            
+            <!-- Карточка 4 -->
+            <div class="modern-info-card" data-aos="fade-up">
+                <div class="icon-box-premium">
+                    <div class="photo-container">
+                            <img src="photo12.jpg">
+                        </div>
+                    </svg>
+                </div>
+                <h3 class="rounded-text text-xl mb-2">Дети</h3>
+                <div class="premium-divider"></div>
+                <p class="rounded-text text-sm text-gray-500 font-light leading-relaxed">Мы будем рады видеть вас с детками, но учитывайте пожалуйста, что мероприятие рассчитано на возраст 12+.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+    <section class="py-8 bg-white text-center">
+    <div class="max-w-4xl mx-auto p-4">
+    <!-- Основной контейнер карточки -->
+    <div class="relative overflow-hidden bg-white rounded-[40px] border border-gray-100 p-10 md:p-14 shadow-lg flex flex-col md:flex-row items-center gap-6">
+        
+        <!-- Декоративная буква на фоне (логотип/монограмма) -->
+        <div class="absolute -right-4 -bottom-4 font-serif text-[200px] text-[#C5A059] opacity-5 pointer-events-none italic select-none" style="font-family: 'Great Vibes', cursive;">
+            M
+        </div>
+
+        <!-- Блок с фотографией -->
+        <div class="relative w-44 h-44 flex-shrink-0 z-10">
+            <!-- Внешнее тонкое кольцо -->
+            <div class="absolute -inset-2 rounded-full border border-[#C5A059] opacity-20"></div>
+            <!-- Рамка фото -->
+            <div class="w-full h-full rounded-full border border-[#C5A059] p-1.5 bg-white overflow-hidden">
+                <!-- Путь к вашему фото -->
+                <img 
+                    src="photo6.jpg" 
+                    alt="Мариса" 
+                    class="w-full h-full object-cover rounded-full"
+                    onerror="this.src='https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=400'"
+                >
+            </div>
+        </div>
+
+        <!-- Контентная часть -->
+        <div class="flex-1 text-center md:text-left z-10">
+            <!-- Имя (не жирное) -->
+            <h3 class="infant-font-main text-5xl text-[#461312] mb-6 tracking-wide">
+                Мариса
+            </h3>
+            
+            <!-- Текст сообщения -->
+            <p class="rounded-text text-gray-600 text-lg mb-8 leading-relaxed font-light">
+                По всем вопросам Вы можете обращаться<br class="hidden md:block"> к нашему организатору!
+            </p>
+            
+            <!-- Контактные данные -->
+            <div class="flex flex-col gap-1">
+                <span class="text-[10px] text-[#C5A059] uppercase tracking-[0.3em] font-bold">
+                    Телефон для связи
+                </span>
+                <a href="tel:+79250104267" class="text-2xl text-[#461312] hover:text-[#C5A059] transition-colors duration-300 tracking-wider font-normal no-underline border-b border-transparent hover:border-[#C5A059] inline-block w-fit mx-auto md:mx-0" style="font-family: 'Noto Serif', serif;">
+                    8 925 010 42 67
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+         </section>
+
+
+
+
+
+
+
+
+    
+    <!-- RSVP -->
+    <section class="pt-0 bg-white">
+    <div class="container mx-auto px-4 max-w-3xl">
+        <div class="premium-form-card" data-aos="fade-up">
+            <header class="text-center mb-12">
+                <h2 class="infant-font-main text-5xl text-accent-red mb-7">Анкета гостя</h2>
+                <div class="berry-line"></div>
+                
+                <div class="info-highlight-box text-left">
+                    <p class="text-lg text-stone-800 mb-5 leading-tight">
+                        Просьба заполнить анкету до <span class="font-bold text-accent-red">23 ноября 2026 г.</span>
+                    </p>
+                    <p class="text-base text-stone-900 font-bold">
+                        Анкета заполняется каждым гостем персонально!
+                    </p>
+                </div>
+            </header>
+
+            <form id="weddingSurvey" class="space-y-12">
+                <!-- Поле ввода имени -->
+                <div class="space-y-4">
+                    <label class="rounded-text text-xs uppercase tracking-widest text-stone-500 font-bold">Ваше Имя и Фамилия</label>
+                    <input type="text" name="guest_name" required placeholder="Введите ваше имя" 
+                        class="w-full bg-transparent border-b border-stone-300 p-3 focus:outline-none focus:border-accent-red transition-colors font-medium">
+                </div>
+
+                <!-- Присутствие -->
+                <div class="space-y-6">
+                    <p class="rounded-text text-2xl text-center leading-relaxed">Планируете ли вы прийти на свадьбу?</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <label>
+                            <input type="radio" name="presence" value="Да, с удовольствием" required>
+                            <div class="option-card">Да, с удовольствием</div>
+                        </label>
+                        <label>
+                            <input type="radio" name="presence" value="Нет, к сожалению не приду">
+                            <div class="option-card">Нет, к сожалению не приду</div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Алкоголь -->
+                <div class="space-y-6">
+                    <p class="rounded-text text-2xl text-center leading-relaxed">Какой алкоголь вы предпочитаете?</p>
+                    <div class="alcohol-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 12px;">
+                        <label><input type="radio" name="alcohol" value="Шампанское" required><div class="option-card">Шампанское</div></label>
+                        <label><input type="radio" name="alcohol" value="Безалкогольное Шампанское" required><div class="option-card">Безалкогольное Шампанское</div></label>
+                        <label><input type="radio" name="alcohol" value="Вино белое сухое"><div class="option-card">Вино белое сухое</div></label>
+                        <label><input type="radio" name="alcohol" value="Вино белое полусухое"><div class="option-card">Вино белое полусухое</div></label>
+                        <label><input type="radio" name="alcohol" value="Вино белое полусладкое"><div class="option-card">Вино белое полусладкое</div></label>
+                        <label><input type="radio" name="alcohol" value="Вино красное сухое"><div class="option-card">Вино красное сухое</div></label>
+                        <label><input type="radio" name="alcohol" value="Вино красное полусухое"><div class="option-card">Вино красное полусухое</div></label>
+                        <label><input type="radio" name="alcohol" value="Вино красное полусладкое"><div class="option-card">Вино красное полусладкое</div></label>
+                        <label><input type="radio" name="alcohol" value="Виски"><div class="option-card">Виски</div></label>
+                        <label><input type="radio" name="alcohol" value="Ром"><div class="option-card">Ром</div></label>
+                        <label><input type="radio" name="alcohol" value="Водка"><div class="option-card">Водка</div></label>
+                        <label><input type="radio" name="alcohol" value="Не пью алкоголь"><div class="option-card">Не пью алкоголь</div></label>
+                    </div>
+                </div>
+
+                <!-- Еда -->
+                <div class="space-y-6">
+                    <p class="rounded-text text-2xl text-center leading-relaxed">Что предпочитаете на горячее?</p>
+                    <div class="grid grid-cols-3 gap-4">
+                        <label><input type="radio" name="food" value="Мясо" required><div class="option-card">Мясо</div></label>
+                        <label><input type="radio" name="food" value="Рыба"><div class="option-card">Рыба</div></label>
+                        <label><input type="radio" name="food" value="Птица"><div class="option-card">Птица</div></label>
+                    </div>
+                </div>
+
+                <button type="submit" id="submitBtn"  class="glass-btn w-full text-white py-5 rounded-full uppercase tracking-[0.3em] text-xs font-bold shadow-lg">
+                    Отправить анкету
+                </button>
+            </form>
+
+           <div id="surveyThanks" class="hidden text-center py-12">
+                    <h3 class="alex-brush text-5xl text-accent-red mb-4">Благодарим!</h3>
+                    <p class="rounded-text text-stone-500 font-medium">Ваш ответ успешно отправлен. До встречи на празднике!</p>
+                </div>
+        </div>
+    </div>
+</section>
+    <section class="pt-0 pb-16 bg-white overflow-hidden">
+    <div class="secondary-photo-container">
+                    <img src="photo.jpg" alt="[Фото пары]" class="secondary-photo" onerror="this.style.display='none';">
+                </div>
+</section>
+
+
+
+
+
+
+    
+    
+     <footer class="py-12 text-center border-t border-gray-100">
+      <div data-aos="fade-up" class="flex flex-col items-center gap-2">
+            <p class="infant-font-main cursive text-4xl text-accent-red mb-2">С любовью,</p>
+            <p class="infant-font-main cursive text-4xl text-accent-red mb-2">Евгений и Ирина</p>
+        </div>
+    </footer>
+
+
+    <script>
+        window.onload = function() {
+        AOS.init({ duration: 1200, once: true });
+
+        document.getElementById('rsvpForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            this.classList.add('hidden');
+            document.getElementById('thankYouMessage').classList.remove('hidden');
+        });
+
+ const pillars = document.querySelectorAll('.color-pillar');
+
+            function togglePillar(el, e) {
+                e.preventDefault();
+                e.stopPropagation();
+                
+                if (el.classList.contains('active')) {
+                    el.classList.remove('active');
+                } else {
+                    pillars.forEach(p => p.classList.remove('active'));
+                    el.classList.add('active');
+                }
+            }
+
+            pillars.forEach(pillar => {
+                // Добавляем и клик, и тач для надежности
+                pillar.addEventListener('click', function(e) { togglePillar(this, e); });
+                pillar.addEventListener('touchstart', function(e) { togglePillar(this, e); }, {passive: false});
+            });
+
+            document.addEventListener('click', function() {
+                pillars.forEach(p => p.classList.remove('active'));
+            });
+            
+            // Фикс для тача на всем документе
+            document.addEventListener('touchstart', function(e) {
+                if (!e.target.closest('.color-pillar')) {
+                    pillars.forEach(p => p.classList.remove('active'));
+                }
+            }, {passive: true});
+
+           
+         
+
+            
+            
+        };
+ // Универсальная функция переключения
+        function handlePillarClick(el) {
+            if (window.innerWidth < 1024) {
+                const wasActive = el.classList.contains('active');
+                
+                // Снимаем активность со всех
+                document.querySelectorAll('.color-pillar').forEach(p => p.classList.remove('active'));
+                
+                // Если не был активен - активируем
+                if (!wasActive) {
+                    el.classList.add('active');
+                }
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 1000, once: true });
+
+            const pillars = document.querySelectorAll('.color-pillar');
+            
+            pillars.forEach(pillar => {
+                // Обработка клика (для всех браузеров)
+                pillar.addEventListener('click', function(e) {
+                    handlePillarClick(this);
+                });
+
+                // Явная обработка конца касания для Safari/iOS
+                // Используем touchend, так как он срабатывает в Safari без задержек
+                pillar.addEventListener('touchend', function(e) {
+                    // Предотвращаем двойное срабатывание (click + touchend)
+                    // Но позволяем скроллинг страницы
+                });
+            });
+            // Обработка карточек памятки для Safari
+            const infoCards = document.querySelectorAll('.modern-info-card');
+            infoCards.forEach(card => {
+                card.addEventListener('click', function() {
+                    // Здесь можно добавить логику активации, если нужно
+                    // Для Safari сам факт наличия слушателя и tabindex/role делает блок "тапабельным"
+                    this.style.opacity = '0.7';
+                    setTimeout(() => { this.style.opacity = '1'; }, 100);
+                });
+                card.addEventListener('touchend', function(e) {}, {passive: true});
+            });
+            
+        });
+
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwmsbFc5Lj36qg8hLUpSm5sTnVIZQ7ZMaHEUMeBRysrNfnuD8V01Q-kdsLopA6nosHs/exec"; 
+
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({ duration: 1000, once: true });
+            
+            const form = document.getElementById('weddingSurvey');
+            const btn = document.getElementById('submitBtn');
+            const thanks = document.getElementById('surveyThanks');
+
+            if (form) {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Блокируем кнопку сразу
+                    btn.disabled = true;
+                    btn.innerText = "ОТПРАВЛЯЕМ...";
+
+                    const formData = new FormData(form);
+                    const params = new URLSearchParams();
+                    formData.forEach((value, key) => params.append(key, value));
+
+                    // Отправляем данные
+                    fetch(SCRIPT_URL, {
+                        method: 'POST',
+                        body: params,
+                        mode: 'no-cors', // Обязательно для Google
+                        headers: {
+                            'Content-Type': 'application/x-www-form-urlencoded'
+                        }
+                    })
+                    .then(() => {
+                        // В режиме no-cors мы не ждем реального ответа 'ok', 
+                        // так как Google его не возвращает браузеру в этом режиме.
+                        // Просто скрываем форму.
+                        form.style.display = 'none';
+                        thanks.classList.remove('hidden');
+                        thanks.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    })
+                    .catch(error => {
+                        console.error('Fetch error:', error);
+                        alert("Произошла ошибка при отправке. Пожалуйста, попробуйте еще раз.");
+                        btn.disabled = false;
+                        btn.innerText = "ОТПРАВИТЬ АНКЕТУ";
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
